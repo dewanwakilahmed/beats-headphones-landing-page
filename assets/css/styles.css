@@ -46,7 +46,7 @@
   --mb-2: 2rem; /* 32px */
   --mb-2-5: 2.5rem; /* 40px */
 
-  /*========== z index ==========*/
+  /*========== z indexes ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -104,6 +104,7 @@ button,
 input {
   border: none;
   outline: none;
+  /* font: inherit; */
 }
 
 button {
@@ -113,6 +114,18 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* removes all animations, transitions and smooth scroll (accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/

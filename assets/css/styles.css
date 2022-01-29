@@ -24,27 +24,27 @@
 
   /*========== Font & Typographies ==========*/
   --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 5rem;
-  --bigger-font-size: 3.5rem;
-  --big-font-size: 2.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --text-line-height: 2rem;
+  --biggest-font-size: 5rem; /* 80px */
+  --bigger-font-size: 3.5rem; /* 56px */
+  --big-font-size: 2.5rem; /* 40px */
+  --h2-font-size: 1.25rem; /* 20px */
+  --h3-font-size: 1.125rem; /* 18px */
+  --normal-font-size: 0.938rem; /* 15px */
+  --small-font-size: 0.813rem; /* 13px */
+  --smaller-font-size: 0.75rem; /* 12px */
+  --text-line-height: 2rem; /* 32px */
 
   /*========== Font Weights ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
   /*========== Bottom Margins ==========*/
-  --mb-0-5: 0.5rem;
-  --mb-0-75: 0.75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
+  --mb-0-5: 0.5rem; /* 8px */
+  --mb-0-75: 0.75rem; /* 12px */
+  --mb-1: 1rem; /* 16px */
+  --mb-1-5: 1.5rem; /* 24px */
+  --mb-2: 2rem; /* 32px */
+  --mb-2-5: 2.5rem; /* 40px */
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -54,18 +54,66 @@
 /*=============== RESPONSIVE TYPOGRAPHY ===============*/
 @media screen and (min-width: 968px) {
   :root {
-    --biggest-font-size: 7.5rem;
-    --bigger-font-size: 4.5rem;
-    --big-font-size: 4rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --biggest-font-size: 7.5rem; /* 120px */
+    --bigger-font-size: 4.5rem; /* 72px */
+    --big-font-size: 4rem; /* 64px */
+    --h2-font-size: 1.5rem; /* 24px */
+    --h3-font-size: 1.25rem; /* 20px */
+    --normal-font-size: 1rem; /* 16px */
+    --small-font-size: 0.875rem; /* 14px */
+    --smaller-font-size: 0.813rem; /* 13px */
   }
 }
 
 /*=============== BASE ===============*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
